@@ -13,8 +13,8 @@ local function run(msg, matches)
 				chat_id =  v
 				local chat = 'chat#id'..chat_id
 				local channel = 'channel#id'..chat_id
-				send_large_msg(chat, response)
-				send_large_msg(channel, response)
+				 send_api_msg(msg, get_receiver_api(msg), text, true, 'md')
+		 send_api_msg(msg, get_receiver_api(msg), text, true, 'md')
 			end
 		end
 	end
